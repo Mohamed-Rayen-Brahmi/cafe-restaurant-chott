@@ -13,12 +13,21 @@
   var toggle = document.getElementById("nav-toggle");
   var navLinks = document.querySelector(".nav-links");
   if (toggle && navLinks) {
+    var setOpen = function (open) {
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+      navLinks.classList.toggle("is-open", open);
+    };
     toggle.addEventListener("click", function () {
-      var expanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!expanded));
-      navLinks.style.display = expanded ? "none" : "flex";
-      if (!expanded) {
-        navLinks.style.cssText += "flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--bg);padding:16px 24px;border-bottom:1px solid var(--border);";
+      setOpen(toggle.getAttribute("aria-expanded") !== "true");
+    });
+    navLinks.addEventListener("click", function (e) {
+      if (e.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && navLinks.classList.contains("is-open")) {
+        setOpen(false);
+        toggle.focus();
       }
     });
   }
