@@ -73,6 +73,10 @@ moment" idea: a procedural img2threejs reconstruction (wrong tool for a food/dri
 Canva AI-generated still-image scroll sequence (a reasonable free-tier stand-in, but not what was
 asked for). Build record: `blender-teapot/` (the exported GLB) and `3d-teapot/src/blender-pour.ts`
 (the three.js integration). Earlier attempts archived, not deleted, in `3d-teapot/`.
+The Blender export's animation was broken (split into five clips of which only a mint leaf played,
+teapot tilting away from the glass, stream falling outside it). `scripts/fix-teapot-animation.py`
+keeps the Blender meshes and rebuilds one "Pour" clip from the geometry into
+`public/models/teapot-pour.glb`; `blender-teapot/teapot-pour.glb` stays the untouched export.
 
 ## Imagery
 Two sources, kept separate and disclosed differently:

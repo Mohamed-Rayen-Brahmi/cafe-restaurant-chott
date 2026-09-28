@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
+import { toCreasedNormals } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 
 function initPour(container: HTMLElement): void {
   const canvas = container.querySelector('canvas') as HTMLCanvasElement | null;
@@ -23,8 +24,9 @@ function initPour(container: HTMLElement): void {
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
 
   const camera = new THREE.PerspectiveCamera(36, 1, 0.01, 10);
-  camera.position.set(0.10, 0.30, 0.72);
-  camera.lookAt(0.09, 0.11, 0);
+  // Frames the whole pour: the teapot lifts to y=0.38 and the glass sits at x=0.28.
+  camera.position.set(0.085, 0.3, 0.84);
+  camera.lookAt(0.085, 0.18, 0);
 
   const key = new THREE.DirectionalLight(0xfff4e8, 2.2);
   key.position.set(-0.5, 0.8, 0.6);
@@ -33,8 +35,7 @@ function initPour(container: HTMLElement): void {
   scene.add(fill);
 
   let mixer: THREE.AnimationMixer | null = null;
-  let action: THREE.AnimationAction | null = null;
-  let duration = 1;
+  let duration = 0;
   let ready = false;
 
   function resize(): void {
@@ -60,14 +61,24 @@ function initPour(container: HTMLElement): void {
         if ((mesh as any).isMesh) {
           mesh.castShadow = false;
           mesh.receiveShadow = false;
+          // The export has flat per-face normals, which makes the lathed
+          // teapot look faceted. Smooth them, but keep real creases (rims).
+          if (mesh.name === 'TeapotBody' || mesh.name === 'TeapotLid') {
+            mesh.geometry = toCreasedNormals(mesh.geometry, Math.PI / 3);
+          }
         }
       });
+      // Play every clip: a Blender export can split the animation into one
+      // clip per object, and playing only the first leaves the rest frozen.
       if (gltf.animations.length > 0) {
         mixer = new THREE.AnimationMixer(gltf.scene);
-        action = mixer.clipAction(gltf.animations[0]);
-        action.play();
-        action.paused = true;
-        duration = gltf.animations[0].duration || 1;
+        for (const clip of gltf.animations) {
+          const action = mixer.clipAction(clip);
+          action.setLoop(THREE.LoopOnce, 1);
+          action.clampWhenFinished = true;
+          action.play();
+          duration = Math.max(duration, clip.duration);
+        }
       }
       ready = true;
       resize();
@@ -83,10 +94,13 @@ function initPour(container: HTMLElement): void {
 
   let currentT = -1;
   function updateScrub(): void {
-    if (!ready || !mixer || !action) return;
+    if (!ready || !mixer) return;
     const rect = container.getBoundingClientRect();
     const vh = window.innerHeight || document.documentElement.clientHeight;
-    let progress = (vh - rect.top) / (vh + rect.height);
+    // Run the pour while the stage is fully on screen: start when its centre
+    // is at 85% of the viewport height, finish when it reaches 30%.
+    const centre = rect.top + rect.height / 2;
+    let progress = (vh * 0.85 - centre) / (vh * 0.55);
     progress = Math.max(0, Math.min(1, progress));
     const t = prefersReduced ? duration : progress * duration;
     if (Math.abs(t - currentT) < 0.002) return;
