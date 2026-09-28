@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#17323A"/>
+  <circle cx="1040" cy="120" r="150" fill="#1E3D46"/>
+  <circle cx="120" cy="540" r="190" fill="#1E3D46"/>
+  <circle cx="150" cy="150" r="34" fill="#C4462A"/>
+  <path d="M100 200h100" stroke="#F1E7D2" stroke-width="6" stroke-linecap="round"/>
+  <text x="150" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="112" fill="#F1E7D2" font-weight="700">Chott</text>
+  <text x="150" y="400" font-family="Arial, sans-serif" font-size="34" fill="#AFC2BF">Café restaurant du vieux port de Bizerte</text>
+  <text x="150" y="460" font-family="Arial, sans-serif" font-size="28" fill="#E0A98F">Thé · café · citronade en terrasse</text>
+</svg>

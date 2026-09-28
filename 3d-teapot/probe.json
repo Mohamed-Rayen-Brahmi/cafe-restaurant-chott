@@ -1,0 +1,13 @@
+{
+  "path": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\teapot-reference.jpg",
+  "type": "jpeg",
+  "bytes": 41344,
+  "width": 500,
+  "height": 410,
+  "aspectRatio": 1.2195121951219512,
+  "technicalSuitability": "conditional",
+  "warnings": [
+    "low resolution; small geometry/material details may be unreliable"
+  ],
+  "note": "This is only technical image probing. Semantic object suitability still requires visual inspection."
+}

@@ -1,0 +1,191 @@
+{
+  "sourceImage": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\teapot-reference.jpg",
+  "zonesDir": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory",
+  "detailInventory": {
+    "scanMethod": "grid-3x3",
+    "targetMinDetails": 6,
+    "details": [
+      {
+        "id": "zone-r0c0",
+        "kind": "occlusion-neighbor",
+        "description": "Dome lid of an adjacent (golden) teapot intruding at the corner; not part of the primary subject.",
+        "region": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.3333,
+          "height": 0.3333,
+          "units": "normalized"
+        },
+        "scale": "meso",
+        "affects": "none-ignored",
+        "mapsTo": {
+          "type": "none",
+          "ref": ""
+        },
+        "evidenceRef": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory\\zone-r0c0.png",
+        "confidence": 0.55
+      },
+      {
+        "id": "zone-r0c1",
+        "kind": "geometry-feature",
+        "description": "Top of the primary teapot lid dome and its ball finial on a short stem.",
+        "region": {
+          "x": 0.3333,
+          "y": 0.0,
+          "width": 0.3333,
+          "height": 0.3333,
+          "units": "normalized"
+        },
+        "scale": "meso",
+        "affects": "component-shape",
+        "mapsTo": {
+          "type": "component",
+          "ref": "lid.finial"
+        },
+        "evidenceRef": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory\\zone-r0c1.png",
+        "confidence": 0.8
+      },
+      {
+        "id": "zone-r0c2",
+        "kind": "geometry-feature",
+        "description": "Upper right of the lid dome and start of the shoulder curve; dark cloth background beyond the silhouette.",
+        "region": {
+          "x": 0.6667,
+          "y": 0.0,
+          "width": 0.3333,
+          "height": 0.3333,
+          "units": "normalized"
+        },
+        "scale": "meso",
+        "affects": "component-shape",
+        "mapsTo": {
+          "type": "component",
+          "ref": "lid"
+        },
+        "evidenceRef": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory\\zone-r0c2.png",
+        "confidence": 0.8
+      },
+      {
+        "id": "zone-r1c0",
+        "kind": "geometry-feature",
+        "description": "Body left shoulder and the top of the handle, partially cropped at the frame edge (occluded).",
+        "region": {
+          "x": 0.0,
+          "y": 0.3333,
+          "width": 0.3333,
+          "height": 0.3333,
+          "units": "normalized"
+        },
+        "scale": "meso",
+        "affects": "component-shape",
+        "mapsTo": {
+          "type": "component",
+          "ref": "handle"
+        },
+        "evidenceRef": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory\\zone-r1c0.png",
+        "confidence": 0.8
+      },
+      {
+        "id": "zone-r1c1",
+        "kind": "relief-detail",
+        "description": "Embossed scroll/foliate medallion centered on the body front face; the primary identity feature.",
+        "region": {
+          "x": 0.3333,
+          "y": 0.3333,
+          "width": 0.3333,
+          "height": 0.3333,
+          "units": "normalized"
+        },
+        "scale": "micro",
+        "affects": "material-normal",
+        "mapsTo": {
+          "type": "material",
+          "ref": "body.medallionOverride"
+        },
+        "evidenceRef": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory\\zone-r1c1.png",
+        "confidence": 0.8
+      },
+      {
+        "id": "zone-r1c2",
+        "kind": "geometry-feature",
+        "description": "Body right shoulder curving into the spout base; spout begins its upward sweep here.",
+        "region": {
+          "x": 0.6667,
+          "y": 0.3333,
+          "width": 0.3333,
+          "height": 0.3333,
+          "units": "normalized"
+        },
+        "scale": "meso",
+        "affects": "component-shape",
+        "mapsTo": {
+          "type": "component",
+          "ref": "spout"
+        },
+        "evidenceRef": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory\\zone-r1c2.png",
+        "confidence": 0.8
+      },
+      {
+        "id": "zone-r2c0",
+        "kind": "geometry-feature",
+        "description": "Lower body, tapering toward the base; dark cloth background at the very edge.",
+        "region": {
+          "x": 0.0,
+          "y": 0.6667,
+          "width": 0.3333,
+          "height": 0.3333,
+          "units": "normalized"
+        },
+        "scale": "macro",
+        "affects": "component-shape",
+        "mapsTo": {
+          "type": "component",
+          "ref": "body"
+        },
+        "evidenceRef": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory\\zone-r2c0.png",
+        "confidence": 0.8
+      },
+      {
+        "id": "zone-r2c1",
+        "kind": "occlusion-neighbor",
+        "description": "Small lid/finial of a different, smaller teapot peeking in at the bottom edge; not part of the primary subject.",
+        "region": {
+          "x": 0.3333,
+          "y": 0.6667,
+          "width": 0.3333,
+          "height": 0.3333,
+          "units": "normalized"
+        },
+        "scale": "meso",
+        "affects": "none-ignored",
+        "mapsTo": {
+          "type": "none",
+          "ref": ""
+        },
+        "evidenceRef": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory\\zone-r2c1.png",
+        "confidence": 0.55
+      },
+      {
+        "id": "zone-r2c2",
+        "kind": "geometry-feature",
+        "description": "Spout mid-section continuing its curve toward the tip, and lower body right side.",
+        "region": {
+          "x": 0.6667,
+          "y": 0.6667,
+          "width": 0.3333,
+          "height": 0.3333,
+          "units": "normalized"
+        },
+        "scale": "meso",
+        "affects": "component-shape",
+        "mapsTo": {
+          "type": "component",
+          "ref": "spout"
+        },
+        "evidenceRef": "C:\\Users\\rayen\\Documents\\DIGILOOM\\clients\\cafe-restaurant-chott\\3d-teapot\\detail-inventory\\zone-r2c2.png",
+        "confidence": 0.8
+      }
+    ]
+  },
+  "authoringInstruction": "Open each zone crop under zonesDir and replace every detail stub's kind, description, scale, affects, mapsTo, and confidence with what is actually observed. Add more detail entries per zone if a single zone contains multiple distinct marks; do not leave stubs unfilled or unlinked (mapsTo must reference a real component.localFeatures or material.localOverrides entry)."
+}

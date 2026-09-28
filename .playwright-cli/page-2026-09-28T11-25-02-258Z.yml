@@ -1,0 +1,165 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Chott" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation "Navigation principale" [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "Notre histoire" [ref=e9] [cursor=pointer]:
+              - /url: "#histoire"
+          - listitem [ref=e10]:
+            - link "Menu" [ref=e11] [cursor=pointer]:
+              - /url: "#menu"
+          - listitem [ref=e12]:
+            - link "La terrasse" [ref=e13] [cursor=pointer]:
+              - /url: "#terrasse"
+          - listitem [ref=e14]:
+            - link "Infos pratiques" [ref=e15] [cursor=pointer]:
+              - /url: "#infos"
+        - link "Itinéraire" [ref=e16] [cursor=pointer]:
+          - /url: https://www.google.com/maps/place/cafe+restaurant+chot/@37.2779304,9.8746509,17z
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - img "Le vieux port de Bizerte au petit matin, barques de pêche amarrées le long du quai" [ref=e21]
+      - generic [ref=e22]:
+        - paragraph [ref=e23]: Chott · Vieux port de Bizerte
+        - heading "Une table en terrasse, juste au bord de l'eau" [level=1] [ref=e24]
+        - paragraph [ref=e25]: Thé, café et citronade sur le quai du vieux port, entre les tables et les barques de pêcheurs. Ouvert tous les jours jusqu'à 22h.
+        - generic [ref=e26]:
+          - link "Itinéraire" [ref=e27] [cursor=pointer]:
+            - /url: https://www.google.com/maps/place/cafe+restaurant+chot/@37.2779304,9.8746509,17z
+          - link "Appeler · 55 891 298" [ref=e28] [cursor=pointer]:
+            - /url: tel:+21655891298
+    - region "Le thé à la menthe" [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - paragraph [ref=e32]: Sur le menu
+          - heading "Le thé à la menthe, comme on le sert ici" [level=2] [ref=e33]
+          - paragraph [ref=e34]: Un thé versé de haut, à la façon du Maghreb, servi dans un petit verre à liseré doré, avec quelques feuilles de menthe fraîche. Scrollez pour voir la théière verser.
+        - img "Une théière traditionnelle du Maghreb qui verse du thé à la menthe dans un verre à liseré doré" [ref=e36]
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: Notre histoire
+        - heading "Sur le quai du vieux port" [level=2] [ref=e42]
+        - paragraph [ref=e43]: Chott est une petite adresse installée sur le quai du vieux port de Bizerte, entre les cafés et les restaurants qui longent l'eau. On peut s'y installer en terrasse, commander à emporter, ou se faire livrer sans contact.
+        - paragraph [ref=e44]: La maison reste joignable directement, par téléphone ou par WhatsApp, pour une question ou une réservation de table.
+        - list [ref=e45]:
+          - listitem [ref=e46]: Sur place, à emporter et livraison sans contact
+          - listitem [ref=e47]: Terrasse face aux barques de pêche, tout au long de la journée
+          - listitem [ref=e48]: 4,3 étoiles sur Google, 22 avis
+      - img "Vue du vieux port de Bizerte, bateaux amarrés et façades colorées le long du quai" [ref=e50]
+    - generic [ref=e52]:
+      - paragraph [ref=e53]: À la carte
+      - heading "Ce qu'on y boit" [level=2] [ref=e54]
+      - paragraph [ref=e55]: Un choix simple de thés, cafés et boissons fraîches. Carte complète et prix détaillés au comptoir.
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - heading "Thés & cafés" [level=3] [ref=e58]
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - generic [ref=e61]: Thé à la menthe
+            - listitem [ref=e62]:
+              - generic [ref=e63]: Café direct
+            - listitem [ref=e64]:
+              - generic [ref=e65]: Cappuccino
+            - listitem [ref=e66]:
+              - generic [ref=e67]: Café blanc
+        - generic [ref=e68]:
+          - heading "Citronade & jus" [level=3] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71]:
+              - generic [ref=e72]: Citronade
+              - generic [ref=e73]: 4 DT
+            - listitem [ref=e74]:
+              - generic [ref=e75]: Jus de saison
+            - listitem [ref=e76]:
+              - generic [ref=e77]: Boissons fraîches
+        - generic [ref=e78]:
+          - heading "Douceurs" [level=3] [ref=e79]
+          - list [ref=e80]:
+            - listitem [ref=e81]:
+              - generic [ref=e82]: Pâtisseries tunisiennes
+            - listitem [ref=e83]:
+              - generic [ref=e84]: Gâteaux du jour
+      - paragraph [ref=e85]: Prix communiqués au comptoir. Carte détaillée disponible sur place.
+    - generic [ref=e87]:
+      - paragraph [ref=e88]: La terrasse
+      - heading "Face à l'eau, toute la journée" [level=2] [ref=e89]
+      - paragraph [ref=e90]: Chaises dépareillées, tables rondes, et les barques de pêcheurs juste derrière la balustrade. La terrasse de Chott regarde le vieux port du matin jusqu'à la fermeture, à 22h.
+      - generic [ref=e91]:
+        - figure "Le vieux port de Bizerte, où Chott a sa terrasse." [ref=e92]:
+          - img "Terrasse d'un restaurant du vieux port de Bizerte, tables et chaises face aux quais" [ref=e94]
+        - img "Le vieux port de Bizerte vu depuis le quai, bateaux de pêche et eau calme" [ref=e97]
+    - generic [ref=e99]:
+      - paragraph [ref=e100]: Infos pratiques
+      - heading "Nous trouver" [level=2] [ref=e101]
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - heading "Adresse" [level=3] [ref=e104]
+          - paragraph [ref=e105]: Harbor Drive, vieux portBizerte 7000, Tunisie
+          - paragraph [ref=e106]: "Plus code : 7VHF+5V Bizerte"
+          - link "Voir sur la carte" [ref=e107] [cursor=pointer]:
+            - /url: https://www.google.com/maps/place/cafe+restaurant+chot/@37.2779304,9.8746509,17z
+        - generic [ref=e108]:
+          - heading "Horaires" [level=3] [ref=e109]
+          - paragraph [ref=e110]: Ouvert jusqu'à 22h.
+          - paragraph [ref=e111]: "Horaires détaillés selon le jour : nous appeler ou voir la page Facebook."
+        - generic [ref=e112]:
+          - heading "Contact" [level=3] [ref=e113]
+          - paragraph [ref=e114]:
+            - link "55 891 298" [ref=e115] [cursor=pointer]:
+              - /url: tel:+21655891298
+          - paragraph [ref=e116]:
+            - link "facebook.com/cafe.chot" [ref=e117] [cursor=pointer]:
+              - /url: https://www.facebook.com/cafe.chot/
+          - paragraph [ref=e118]: Sur place · à emporter · livraison sans contact
+    - generic [ref=e119]:
+      - img "Le vieux port de Bizerte, bateaux de pêche alignés le long du quai au coucher du soleil" [ref=e120]
+      - generic [ref=e121]:
+        - heading "Chott, sur le vieux port de Bizerte" [level=2] [ref=e122]
+        - generic [ref=e123]:
+          - link "Itinéraire" [ref=e124] [cursor=pointer]:
+            - /url: https://www.google.com/maps/place/cafe+restaurant+chot/@37.2779304,9.8746509,17z
+          - link "Appeler · 55 891 298" [ref=e125] [cursor=pointer]:
+            - /url: tel:+21655891298
+  - contentinfo [ref=e126]:
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - link "Chott" [ref=e130] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e131]: Café restaurant en terrasse sur le vieux port de Bizerte.
+        - generic [ref=e132]:
+          - heading "Navigation" [level=3] [ref=e133]
+          - list [ref=e134]:
+            - listitem [ref=e135]:
+              - link "Notre histoire" [ref=e136] [cursor=pointer]:
+                - /url: "#histoire"
+            - listitem [ref=e137]:
+              - link "Menu" [ref=e138] [cursor=pointer]:
+                - /url: "#menu"
+            - listitem [ref=e139]:
+              - link "La terrasse" [ref=e140] [cursor=pointer]:
+                - /url: "#terrasse"
+            - listitem [ref=e141]:
+              - link "Infos pratiques" [ref=e142] [cursor=pointer]:
+                - /url: "#infos"
+        - generic [ref=e143]:
+          - heading "Légal" [level=3] [ref=e144]
+          - list [ref=e145]:
+            - listitem [ref=e146]:
+              - link "Conditions générales" [ref=e147] [cursor=pointer]:
+                - /url: /terms.html
+            - listitem [ref=e148]:
+              - link "Confidentialité" [ref=e149] [cursor=pointer]:
+                - /url: /privacy.html
+            - listitem [ref=e150]:
+              - link "Crédits photo" [ref=e151] [cursor=pointer]:
+                - /url: /photo-credits.html
+      - generic [ref=e152]:
+        - generic [ref=e153]: © 2026 Chott, café restaurant, vieux port de Bizerte.
+        - link "Facebook" [ref=e154] [cursor=pointer]:
+          - /url: https://www.facebook.com/cafe.chot/

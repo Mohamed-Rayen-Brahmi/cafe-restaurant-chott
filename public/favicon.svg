@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg { fill: #17323A }
+    .mark { fill: #C4462A }
+    .water { stroke: #F1E7D2; stroke-width: 2; stroke-linecap: round }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0E2229 }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="32" height="32" rx="7"/>
+  <circle class="mark" cx="16" cy="13" r="6.2"/>
+  <path class="water" d="M6 22h20"/>
+  <path class="water" d="M9 26.5h14" opacity="0.6"/>
+</svg>
